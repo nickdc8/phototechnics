@@ -13,5 +13,7 @@ module.exports = {
         // Add any options here
       },
     },
+    "gatsby-plugin-theme-ui",
+    "gatsby-plugin-react-helmet",
   ],
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby';
-import theme from '../gatsby-plugin-theme-ui/index'
 
 const LinkStyles = {
     color: 'white',

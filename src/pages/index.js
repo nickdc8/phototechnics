@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { Helmet } from "react-helmet";
+import Hero from '../components/Hero'
 
 const IndexPage = () => {
   return (
@@ -16,7 +17,7 @@ const IndexPage = () => {
         <title>PS Phototechnics</title>
       </Helmet>
       <Layout>
-        <h1>Hello</h1>
+        <Hero />
       </Layout>
     </>
   )

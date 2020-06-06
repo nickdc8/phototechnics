@@ -6,15 +6,24 @@ import '../styles/reset.css'
 
 const Container = styled.div`
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+`
+
+const Content = styled.div`
+    flex-grow: 1;
 `
 
 const Layout = ({ children }) => {
     return (
         <Container>
-            <Navbar />
-                <div>
-                    {children}
-                </div>
+            <Content>
+                <Navbar />
+                    <div>
+                        {children}
+                    </div>
+            </Content>
             <Footer />
         </Container>
     )

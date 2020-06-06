@@ -5,14 +5,15 @@ import theme from '../gatsby-plugin-theme-ui/index'
 const LinkStyles = {
     color: 'white',
     textDecoration: 'none',
-    margin: '0 16px',
+    margin: '0 8px',
     padding: '0.25rem',
-    fontSize: '14px'
+    fontSize: '14px',
+    display: 'block',
+    borderBottom: '2px solid transparent'
 }
 
 const activeStyles = {
-    background: `${theme.colors.tertiary}`,
-    color: `${theme.colors.secondary}`,
+    borderBottom: '2px solid #45BAFC',
 }
 
 const NavLink = ({ children, to }) => (

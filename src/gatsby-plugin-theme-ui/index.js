@@ -1,9 +1,10 @@
 export default {
     colors: {
-      text: "#333",
-      background: "#fff",
+      text: "#333333",
+      background: "#FFFFFF",
       primary: "#1E1E1E",
       secondary: "#45BAFC",
+      tertiary: "#FFFFFF",
     },
     fonts: {
         body: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',

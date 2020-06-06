@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styled from "@emotion/styled"
-import Logo from '../img/Logo.svg'
+import styled from '@emotion/styled'
+import Logo from '../img/pt-logo.svg'
+import NavLink from '../components/NavLink'
 import theme from '../gatsby-plugin-theme-ui/index'
 
 
@@ -20,6 +21,10 @@ const Nav = styled.div`
     max-width: 1200px;
 `
 
+const NavLinks = styled.ul`
+    display: flex;
+`
+
 const Navbar = () => {
     return(
         <Container>
@@ -27,10 +32,11 @@ const Navbar = () => {
                 <Link to="/">
                     <img src={Logo} alt=""/>
                 </Link>
-                <ul>
-                    <li><Link to="/tours">360° Tours</Link></li>
-                    <li><Link to="/floorplans">Floor Plans</Link></li>
-                </ul>
+                <NavLinks>
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/tours">360° Tours</NavLink>
+                    <NavLink to="/floorplans">Floorplans</NavLink>
+                </NavLinks>
             </Nav>
         </Container>
     )

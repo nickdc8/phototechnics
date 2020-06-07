@@ -2,6 +2,9 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { Helmet } from "react-helmet";
 import Hero from '../components/Hero'
+import WhatWeDo from '../components/WhatWeDo'
+import HorizontalRule from '../components/HorizontalRule'
+import ContactSection from '../components/ContactSection'
 
 const IndexPage = () => {
   return (
@@ -18,6 +21,9 @@ const IndexPage = () => {
       </Helmet>
       <Layout>
         <Hero />
+        <WhatWeDo />
+        <HorizontalRule />
+        <ContactSection />
       </Layout>
     </>
   )

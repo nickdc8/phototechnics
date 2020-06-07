@@ -12,15 +12,13 @@ const ButtonStyle = styled(Link) `
         text-decoration: none;
         font-weight: 500;
         text-transform: uppercase;
-        font-size: 16px;
-        letter-spacing: 1px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
         transition: 0.3s;
         :hover {
             background: #038BD8;
         }
     `
-
-
 
 const Button = ( {children, to} ) => {
     return (

@@ -8,24 +8,30 @@ import Button from './Button'
 const HeroContainer = styled.div`
     background-image: url(${bgImage});
     height: 580px;
-    background-size: cover; 
+    background-size: cover;
 `
 
 const Container = styled.div`
     padding-top: 180px;
-    max-width: 672px;
+    max-width: 574px;
 `
 
 const Header = styled.h1 `
     color: ${theme.colors.tertiary};
     font-size: 56px;
     margin-bottom: 32px;
+    @media (max-width: 900px) {
+        font-size: 40px;
+      }
 `
 const Para = styled.p`
     color: ${theme.colors.tertiary};
     font-size: 21px;
     line-height: 140%;
     margin-bottom: 55px;
+    @media (max-width: 900px) {
+        font-size: 18px;
+      }
 `
 
 const Hero = () => {

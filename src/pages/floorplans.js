@@ -9,7 +9,7 @@ import FloorPlanGallery from "../components/FloorPlanGallery"
 const Para = styled.p`
   font-size: 18px;
   margin: 24px 0 40px;
-  line-height: 32px;
+  line-height: 28px;
   max-width: 700px;
 `
 

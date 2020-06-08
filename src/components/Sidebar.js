@@ -18,6 +18,7 @@ const Sidebar = () => {
         <Link to="/">Home</Link>
         <Link to="/floorplans">Floor Plans</Link>
         <Link to="/tours">360° Tours</Link>
+        <Link to="/pricing">Pricing</Link>
         <AnchorLink to="/#contact">
           <span>Contact</span>
         </AnchorLink>

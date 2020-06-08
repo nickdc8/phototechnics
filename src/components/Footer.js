@@ -57,7 +57,7 @@ const Footer = () => {
                         <a href="instagram.com" target="_blank" rel="noopener noreferrer"><img src={instagram} alt=""/></a>
                     </Social>
                 </Row>
-                <Copyright>© 2020 PSPhotoTechnics. All rights reserved.</Copyright>
+                <Copyright>©2020. All rights reserved.</Copyright>
             </Wrapper>
         </FooterStyle>
     )

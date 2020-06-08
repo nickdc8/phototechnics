@@ -1,4 +1,5 @@
 import React from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import Logo from "../img/pt-logo.svg"
@@ -27,6 +28,16 @@ const NavLinks = styled.ul`
   }
 `
 
+const linkStyle = {
+  color: "white",
+  textDecoration: "none",
+  margin: "0 8px",
+  padding: "0.25rem",
+  fontSize: "14px",
+  display: "block",
+  borderBottom: "2px solid transparent",
+}
+
 const Navbar = () => {
   return (
     <Container>
@@ -38,8 +49,10 @@ const Navbar = () => {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/tours">360° Tours</NavLink>
           <NavLink to="/floorplans">Floorplans</NavLink>
-          <NavLink to="/floorplans">Prices</NavLink>
-          <NavLink to="/floorplans">Contact</NavLink>
+          <NavLink to="/prices">Prices</NavLink>
+          <AnchorLink to="/#contact">
+            <span style={linkStyle}>Contact</span>
+          </AnchorLink>
         </NavLinks>
       </Nav>
     </Container>

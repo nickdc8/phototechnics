@@ -7,11 +7,17 @@ const TitleStyle = styled.div`
   align-items: flex-end;
 `
 
+const Img = styled.img`
+  @media (max-width: 650px) {
+    display: none;
+  }
+`
+
 const Title = ({ src, heading }) => {
   return (
     <TitleStyle>
       <Heading title={heading} />
-      <img src={src} alt="" style={{ width: "77px", marginLeft: "24px" }} />
+      <Img src={src} alt="" style={{ width: "77px", marginLeft: "24px" }} />
     </TitleStyle>
   )
 }

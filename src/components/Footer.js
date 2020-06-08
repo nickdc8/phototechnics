@@ -21,12 +21,20 @@ const Copyright = styled.p`
     color: ${theme.colors.tertiary};
     opacity: 0.4;
     letter-spacing: 0.8px;
+    @media (max-width: 400px) {
+        align-items: center;
+        text-align: center
+    }
 `
 
 const Row = styled.div`
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
+    @media (max-width: 400px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 const Social = styled.div`

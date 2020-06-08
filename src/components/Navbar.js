@@ -23,6 +23,9 @@ const Nav = styled.div`
 
 const NavLinks = styled.ul`
     display: flex;
+    @media (max-width: 700px) {
+        display: none;
+    }
 `
 
 const Navbar = () => {

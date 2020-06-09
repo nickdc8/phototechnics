@@ -14,6 +14,7 @@ const ButtonStyle = styled(Link)`
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 0.5px;
+  width: fit-content;
   transition: 0.3s;
   :hover {
     background: #038bd8;

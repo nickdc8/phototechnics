@@ -54,10 +54,11 @@ const Contact = styled.div`
 
 const ContactLink = styled.a`
   text-decoration: none;
+  font-size: 15px;
   color: ${theme.colors.tertiary};
   opacity: 0.4;
   transition: 0.3s;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   &:hover {
     opacity: 1;
   }

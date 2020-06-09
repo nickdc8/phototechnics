@@ -7,11 +7,13 @@ import EstateAgentTours from "../components/EstateAgentTours"
 import BusinessTours from "../components/BusinessTours"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import "../styles/react-tabs.css"
+import Head from "../components/Head"
 
 const Tours = () => {
   return (
     <Layout>
       <Wrapper>
+        <Head title="360 Tours" />
         <Title src={icon} heading="360° Tours" />
         <Tabs>
           <TabList>

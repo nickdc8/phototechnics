@@ -8,9 +8,12 @@ import image5 from "../img/floorplan05.jpg"
 
 const Gallery = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(379px, 1fr));
+  grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
   margin-top: 80px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 function FloorPlanGallery() {

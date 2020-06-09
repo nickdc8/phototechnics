@@ -30,7 +30,7 @@ const Copyright = styled.p`
 const Row = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
   @media (max-width: 400px) {
     flex-direction: column;
     align-items: center;
@@ -41,6 +41,26 @@ const Social = styled.div`
   display: flex;
   width: 130px;
   justify-content: space-between;
+`
+
+const Contact = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  @media (max-width: 400px) {
+    align-items: center;
+  }
+`
+
+const ContactLink = styled.a`
+  text-decoration: none;
+  color: ${theme.colors.tertiary};
+  opacity: 0.4;
+  transition: 0.3s;
+  margin-bottom: 8px;
+  &:hover {
+    opacity: 1;
+  }
 `
 
 const Footer = () => {
@@ -56,17 +76,35 @@ const Footer = () => {
             />
           </Link>
           <Social>
-            <a href="twitter.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={twitter} alt="twitter" />
             </a>
-            <a href="facebook.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={facebook} alt="facebook" />
             </a>
-            <a href="instagram.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={instagram} alt="instagram" />
             </a>
           </Social>
         </Row>
+        <Contact>
+          <ContactLink href="mailto:info@ptphototechnic.com">
+            info@ptphototechnic.com
+          </ContactLink>
+          <ContactLink href="tel:07875525728">07875525728</ContactLink>
+        </Contact>
         <Copyright>©2020. All rights reserved.</Copyright>
       </Wrapper>
     </FooterStyle>

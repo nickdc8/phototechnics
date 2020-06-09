@@ -14,11 +14,31 @@ const Container = styled.div`
   }
 `
 
+const Para = styled.p`
+  margin-top: 20px;
+  max-width: 760px;
+  line-height: 150%;
+  font-size: 18px;
+`
+
+const Email = styled.a`
+  color: #1e1e1e;
+  font-weight: 500;
+`
+
 const ContactSection = () => {
   return (
     <Wrapper>
       <div id="contact">
         <Heading title="Contact" />
+        <Para>
+          For more information contact us at{" "}
+          <Email href="mailto:info@ptphototechnic.com">
+            info@ptphototechnic.com
+          </Email>{" "}
+          or call <Email href="tel:07875525728">07875525728</Email>, or
+          alternatively fill in the contact form below.
+        </Para>
         <Container>
           <ContactForm />
           <ContactGallery />

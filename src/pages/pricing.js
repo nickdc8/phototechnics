@@ -5,6 +5,7 @@ import Icon1 from "../img/360icon.svg"
 import Icon2 from "../img/floorplan.svg"
 import styled from "@emotion/styled"
 import Button from "../components/Button"
+import Head from "../components/Head"
 
 const Container = styled.div`
   display: grid;
@@ -74,6 +75,7 @@ const Heading = styled.h1`
 function Prices() {
   return (
     <Layout>
+      <Head title="Pricing" />
       <Wrapper>
         <Heading>Pricing</Heading>
         <Container>

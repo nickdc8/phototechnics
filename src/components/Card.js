@@ -18,7 +18,7 @@ const Heading = styled.h2`
 const Text = styled.p`
   margin-bottom: 40px;
   font-size: 16px;
-  line-height: 128.8%;
+  line-height: 140%;
 `
 
 const Card = ({ imgSrc, heading, info, link }) => {

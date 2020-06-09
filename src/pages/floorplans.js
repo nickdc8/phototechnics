@@ -5,6 +5,7 @@ import styled from "@emotion/styled"
 import icon from "../img/floorplan.svg"
 import Title from "../components/Title"
 import FloorPlanGallery from "../components/FloorPlanGallery"
+import Head from "../components/Head"
 
 const Para = styled.p`
   font-size: 18px;
@@ -16,6 +17,7 @@ const Para = styled.p`
 const FloorPlans = () => {
   return (
     <Layout>
+      <Head title="Floor Plans" />
       <Wrapper>
         <Title src={icon} heading="Estate Agent Floor Plans" />
         <Para>

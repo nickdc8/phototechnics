@@ -127,8 +127,6 @@ table {
   border-spacing: 0;
 }
 
-**Longer CSS Styling definition:** 
-
 a:link {
   text-decoration: none;
 }
@@ -145,8 +143,9 @@ a:active {
   text-decoration: none;
 }
 
-**Shorter CSS definition:**
-
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
 }

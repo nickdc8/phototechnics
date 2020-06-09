@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import Tour360 from "./tours/Tour360"
+import Tour360 from "./Tour360"
 
 const Container = styled.div`
   margin: 32px 0;

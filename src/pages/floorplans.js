@@ -6,6 +6,7 @@ import icon from "../img/floorplan.svg"
 import Title from "../components/Title"
 import FloorPlanGallery from "../components/FloorPlanGallery"
 import Head from "../components/Head"
+import { Helmet } from "react-helmet"
 
 const Para = styled.p`
   font-size: 18px;
@@ -17,6 +18,12 @@ const Para = styled.p`
 const FloorPlans = () => {
   return (
     <Layout>
+      <Helmet>
+        <meta
+          name="description"
+          content="360 degree photography and floorplans for Estate Agents."
+        />
+      </Helmet>
       <Head title="Floor Plans" />
       <Wrapper>
         <Title src={icon} heading="Estate Agent Floor Plans" />

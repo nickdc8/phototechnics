@@ -6,6 +6,7 @@ import Icon2 from "../img/floorplan.svg"
 import styled from "@emotion/styled"
 import Button from "../components/Button"
 import Head from "../components/Head"
+import { Helmet } from "react-helmet"
 
 const Container = styled.div`
   display: grid;
@@ -76,6 +77,12 @@ function Prices() {
   return (
     <Layout>
       <Head title="Pricing" />
+      <Helmet>
+        <meta
+          name="description"
+          content="360 degree photography and floorplans for Estate Agents."
+        />
+      </Helmet>
       <Wrapper>
         <Heading>Pricing</Heading>
         <Container>

@@ -8,10 +8,17 @@ import BusinessTours from "../components/BusinessTours"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import "../styles/react-tabs.css"
 import Head from "../components/Head"
+import { Helmet } from "react-helmet"
 
 const Tours = () => {
   return (
     <Layout>
+      <Helmet>
+        <meta
+          name="description"
+          content="360 degree photography and floorplans for Estate Agents."
+        />
+      </Helmet>
       <Wrapper>
         <Head title="360 Tours" />
         <Title src={icon} heading="360° Tours" />

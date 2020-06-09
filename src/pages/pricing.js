@@ -24,13 +24,13 @@ function Prices() {
           <Card
             imgSrc={Icon1}
             heading="360 Tours"
-            info="Prices start at £100"
+            info="Pricing starts at £100"
             link="/tours"
           />
           <Card
             imgSrc={Icon2}
             heading="Estate Agent Floor Plans"
-            info="Prices from £50 including site visit"
+            info="Pricing from £50 including site visit"
             link="/floorplans"
           />
         </Container>

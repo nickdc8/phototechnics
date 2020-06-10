@@ -19,6 +19,7 @@
     "fslightbox-react": "^1.4.9",
     "gatsby": "^2.22.15",
     "gatsby-plugin-anchor-links": "^1.1.1",
+    "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-manifest": "^2.4.11",
     "gatsby-plugin-offline": "^3.2.9",
     "gatsby-plugin-react-helmet": "^3.3.3",

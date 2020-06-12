@@ -101,8 +101,8 @@ const Footer = () => {
           </Social>
         </Row>
         <Contact>
-          <ContactLink href="mailto:info@ptphototechnic.com">
-            info@ptphototechnic.com
+          <ContactLink href="mailto:info@psphototechnic.com">
+            info@psphototechnic.com
           </ContactLink>
           <ContactLink href="tel:07875525728">07875525728</ContactLink>
         </Contact>

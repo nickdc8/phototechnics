@@ -3,7 +3,6 @@ import styled from "@emotion/styled"
 import image1 from "../img/floorplan01.jpg"
 import image2 from "../img/floorplan02.jpg"
 import image3 from "../img/floorplan03.jpg"
-import image4 from "../img/floorplan04.jpg"
 import image5 from "../img/floorplan05.jpg"
 
 const Gallery = styled.div`
@@ -22,7 +21,6 @@ function FloorPlanGallery() {
       <img src={image1} alt="" />
       <img src={image2} alt="" />
       <img src={image3} alt="" />
-      <img src={image4} alt="" />
       <img src={image5} alt="" />
     </Gallery>
   )

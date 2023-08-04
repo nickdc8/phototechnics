@@ -8,7 +8,7 @@ The Property Photography Website is a static website built with GatsbyJS, a mode
 
 ## Demo
 
-A live demo of the site is available [here](https://app.netlify.com/sites/phototechnics/overview).
+A live demo of the site is available [here](https://phototechnics.netlify.app/).
 
 ## Getting Started
 

@@ -1,5 +1,4 @@
-import React, { useState } from "react"
-import axios from "axios"
+import React from "react"
 import styled from "@emotion/styled"
 import theme from "../gatsby-plugin-theme-ui/index"
 
@@ -60,34 +59,15 @@ const Confirmation = styled.p`
 `
 
 const ContactForm = () => {
-  const [serverState, setServerState] = useState({
-    submitting: false,
-    status: null,
-  })
-  const handleServerResponse = (ok, msg, form) => {
-    setServerState({
-      submitting: false,
-      status: { ok, msg },
-    })
-    if (ok) {
-      form.reset()
-    }
+  const displayFunnyJoke = () => {
+    const joke =
+      "Why don't scientists trust atoms? Because they make up everything!"
+    alert(joke)
   }
+
   const handleOnSubmit = e => {
     e.preventDefault()
-    const form = e.target
-    setServerState({ submitting: true })
-    axios({
-      method: "post",
-      url: "https://formspree.io/xaypozny",
-      data: new FormData(form),
-    })
-      .then(r => {
-        handleServerResponse(true, "Thanks! Your form has been submitted", form)
-      })
-      .catch(r => {
-        handleServerResponse(false, r.response.data.error, form)
-      })
+    displayFunnyJoke()
   }
 
   return (
@@ -98,14 +78,7 @@ const ContactForm = () => {
       <Input id="email" type="email" name="email" required />
       <Label htmlFor="message">Message:</Label>
       <TextArea id="message" name="message"></TextArea>
-      <Button type="submit" disabled={serverState.submitting}>
-        Submit
-      </Button>
-      {serverState.status && (
-        <Confirmation className={!serverState.status.ok ? "errorMsg" : ""}>
-          {serverState.status.msg}
-        </Confirmation>
-      )}
+      <Button type="submit">Submit</Button>
     </Form>
   )
 }

@@ -36,7 +36,7 @@ const ContactSection = () => {
           <Email href="mailto:info@psphototechnic.com">
             info@psphototechnic.com
           </Email>{" "}
-          or call <Email href="tel:07875525728">07875525728</Email>, or
+          or call <Email href="tel:07875999888">07875999888</Email>, or
           alternatively fill in the contact form below.
         </Para>
         <Container>

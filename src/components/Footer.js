@@ -104,7 +104,7 @@ const Footer = () => {
           <ContactLink href="mailto:info@psphototechnic.com">
             info@psphototechnic.com
           </ContactLink>
-          <ContactLink href="tel:07875525728">07875525728</ContactLink>
+          <ContactLink href="tel:07875999888">07875999888</ContactLink>
         </Contact>
         <Copyright>©2020. All rights reserved.</Copyright>
       </Wrapper>
